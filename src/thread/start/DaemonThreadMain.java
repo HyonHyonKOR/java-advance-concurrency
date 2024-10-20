@@ -5,6 +5,7 @@ public class DaemonThreadMain {
         System.out.println(Thread.currentThread().getName() + "main() start");
         DaemonThread daemonThread = new DaemonThread();
         daemonThread.setDaemon(true); //데몬 스레드 여부
+        daemonThread.start();
         System.out.println(Thread.currentThread().getName() + "main() end");
     }
 
